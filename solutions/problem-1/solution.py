@@ -20,3 +20,14 @@ answer = sum_multiples(3, 999) + \
          sum_multiples(15, 999)
 
 print(answer)
+"""
+Another approach to this problem is -
+
+1.Make an empty list
+2.iterate between 0 to 1000 and find all the numbers which are divisible by either 3 or 5.
+"""
+l=[]
+for i in range(0,1000):
+  if i%3==0 or i%5==0:
+    l.append(i)
+print(sum(l))
